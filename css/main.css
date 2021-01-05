@@ -6,3 +6,8 @@
 body {
     font-family: 'Raleway', Arial, sans-serif;
 }
+
+footer {
+    background-color: grey;
+    width: 100%;
+}
