@@ -10,17 +10,6 @@ bleuclair : #DEEBFF
 gris      : #F2F2F2
 */
 
-/* --- Titre --- */
-
-#reservia {
-
-    font-family: serif;
-
-    color: #0065FC;
-    font-style: italic;
-    padding-top: 16px;
-}
-
 /* --- Bandeau de Menu ---*/
 
 #menu {
@@ -28,6 +17,10 @@ gris      : #F2F2F2
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+}
+#menu img{
+
+    padding-top: 16px;
 }
 #navbar {
     margin: 32px;
@@ -76,12 +69,12 @@ gris      : #F2F2F2
 /* --- Menu de Recherche --- */
 
 /* --- Filtres --- */
-
 #filters {
-    font-weight: 900;
+    display: flex;
 }
 
-#filters a {
+#filters-list a {
+    font-weight: 900;
     padding: 1rem;
     border: solid  black /*#F2F2F2*/ 1px;
 
@@ -89,12 +82,12 @@ gris      : #F2F2F2
     text-decoration: none;
 }
 
-#filters a:hover {
+#filters-list a:hover {
     color: #000;
     text-decoration: none;
 }
 
-#filters img {
+#filters-list img {
     padding: 0.8em;
     width: 1rem;
     height: 1rem;
@@ -157,12 +150,10 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
-
     padding: 1rem 1.4rem;
     background-color: #F2F2F2;
     width: 100%;
     display: flex;
-
     font-size: 12px;
     line-height: 1.4rem;
 
