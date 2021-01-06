@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
     <head>
-        <link href="../css/main.css" rel="stylesheet" />
-
+        <meta charset="utf-8" />
+        <link href="../css/main.css" rel="stylesheet" media="screen and (min-width: 1280px)" type="text/css"/>
+        <title>Réservia - Réservez vos vacances</title>
+        <script src="https://kit.fontawesome.com/5944b63bf2.js" crossorigin="anonymous"></script> <!--Font-awesome -->
     </head>
     <body>
         <header>
-            <div>
-                <h1>Reservia</h1>
-                <ul>
-                    <li>Hébergements</li>
-                    <li>Activités</li>
-                    <li>S'inscrire</li>
-                </ul>
+            <div id="menu">
+                <h1 id="reservia">Reservia</h1>
+                <div id="navbar">
+                    <a href="#">Hébergements</a>
+                    <a href="#">Activités</a>
+                    <a href="#" id="logon">S'inscrire</a>
+                </div>
             </div>
-            <div>
-                <h3>Trouvez votre hébergement pour des vacances de reve</h3>
+            <div id="header-description">
+                <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
                 <h4>En plein centre-ville ou en pleine nature</h4>
 
                 <!-- Barre de Recherche-->
@@ -31,17 +33,31 @@
             </div>
             <section>
                 <!-- Filtres-->
+                <p id="filters"> Filtres 
+                    <a type="button" href="#"> <img src="../ico/eco.svg" />Economique</a>
+                    <a type="button" href="#"> <img src="../ico/family.svg" />Familial</a>
+                    <a type="button" href="#"> <img src="../ico/love.svg" />Romantique</a>
+                    <a type="button" href="#"> <img src="../ico/pets.svg" />Animaux autorisés</a>
+                </p>
+                <p id="many-available">
+                    <img src="../ico/info.svg" /> Plus de 500 logements sont disponibles dans cette ville
+                </p>
             </section>
         </header>
 
-        <section>
+        <section class="container">
             <aside id="hebergement">
+                <h2>Hébergements à Marseille</h2>
 
             </aside>
             <aside id="most-popular">
+                <h2>Les plus populaires <i></i></h2>
 
             </aside>
+        </section>
+        <section>
             <aside id="activities">
+                <h2>Activités à Marseille</h2>
 
             </aside>
         </section>
@@ -49,7 +65,7 @@
         <footer>
             <div>
                 <ul>
-                    <h5>A Propos</h5>
+                    <h5>A propos</h5>
                     <li>Fonctionnement du site</li>
                     <li>Conditions générales de vente</li>
                     <li>Données et confidentialités</li>
