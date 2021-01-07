@@ -32,10 +32,10 @@
                 <!-- Filtres-->
                 <h4>Filtres </h4>
                 <p id="filters-list">
-                    <a href="#"> <img src="../ico/eco.svg" alt="economique"/>Economique</a>
-                    <a href="#"> <img src="../ico/family.svg" alt="familial" />Familial</a>
-                    <a href="#"> <img src="../ico/love.svg" alt="romantique"/>Romantique</a>
-                    <a href="#"> <img src="../ico/pets.svg" alt="avec animaux"/>Animaux autorisés</a>
+                    <button>Economique</button> <!-- Mettre les classes correspondantes aux images -->
+                    <button>Familial</button> <!-- Prévoir la mise en page des buttons-->
+                    <button>Romantique</button>
+                    <button>Animaux autorisés</button>
                 </p>
                 <p id="many-available">
                     <img src="../ico/info.svg" alt="i info"/> Plus de 500 logements sont disponibles dans cette ville
@@ -43,21 +43,42 @@
             </section>
         </header>
 
-        <section class="container">
-            <aside id="hebergement">
+        <div class="container">
+            <section id="hebergement">
                 <h2>Hébergements à Marseille</h2>
+                <div>
+                    <figure>
+                        <img src="../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="la cannebière" />
+                        <figcaption>
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de <span>25 €</span></p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port" />
+                        <figcaption>
+                            <h3>Hôtel du port</h3>
+                            <p>Nuit à partir de <span>52 €</span></p>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="../images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="les mouettes" />
+                        <figcaption>
+                            <h3>Hôtel les Mouettes</h3>
+                            <p>Nuit à partir de <span>52 €</span></p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-            </aside>
-            <aside id="most-popular">
+            </section>
+            <section id="most-popular">
                 <h2>Les plus populaires <i></i></h2>
 
-            </aside>
-        </section>
-        <section>
-            <aside id="activities">
-                <h2>Activités à Marseille</h2>
+            </section>
+        </div>
+        <section id="activities">
+            <h2>Activités à Marseille</h2>
 
-            </aside>
         </section>
         
         <footer>

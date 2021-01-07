@@ -25,30 +25,24 @@ gris      : #F2F2F2
 #navbar {
     margin: 32px;
 }
-
 #navbar a {
     padding: 32px;
     text-decoration: none;
     color: black;
 }
-
 #navbar .active {
     border-top: #0065FC solid 2px;
     color: #0065FC;
     font-weight: 600;
 
 }
-
 #navbar #logon {
     color: #0065FC;
     font-weight: bolder;
     text-decoration: none;
 }
-
 #navbar #logon:hover {
-    
     text-decoration: underline;
-
 }
 
 /* --- Bandeau demi-Titres --- */
@@ -107,12 +101,49 @@ gris      : #F2F2F2
 #hebergement {
 
     margin-right: 2%;
-    width: 70%;
+    max-width: 65%;
+    background-color: #F2F2F2;
+    padding: 3%;
+    border-radius: 5%;
+
+    overflow: hidden;   /* Fonctionnel mais optimal ?? */
+}
+#hebergement div {
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 1;
+
+}
+#hebergement figure {
+
+    border: white 4px solid;
+    border-radius: 5%;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px #F2F2F2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    max-width: 25%;
+
+
+}
+
+#hebergement img {
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+
+    width: 100%;
 }
 
 #most-popular {
 
-    width: 30%;
+    width: 40%;
+    background-color:#f2f2f2;
+    border-radius: 5%;
+
 }
 
 #activities {
@@ -147,7 +178,7 @@ body {
 
 footer {
 
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     padding: 1rem 1.4rem;
