@@ -216,6 +216,8 @@ gris      : #F2F2F2
 
     border: solid #F2F2F2 1px;
     padding: 0;
+    font-weight: 900;
+    padding-left: 10px;
 
 }
 .search button {                        /* Bouton Rechercher */
@@ -233,7 +235,7 @@ gris      : #F2F2F2
 
 
 .filters-btn {                          /* Bouton de Filtre */
-    padding: 0 1em 0 0;
+    padding: 0 1.2em 1em 0;
     margin: 1.5% 0.5%;
 
     background-color: #FFF;
@@ -242,16 +244,23 @@ gris      : #F2F2F2
     border-radius: 40px 40px 40px 40px;
 
     font-weight: 900;
+    max-height: 40px;
+
 
 }
 .filters-btn span {                     /* Icones des boutons de filtre*/
-    padding: 0.7em;
+    padding: 10px;
     margin-right: 0.4em;
+
     color: #0065FC;
     background-color: #DEEBFF;
 
-    border: 1px solid #DEEBFF;
+    border: 3px solid #DEEBFF;
     border-radius: 100%;
+
+    position: relative;
+    left: -2px;
+    top: -1px;
 }
 
 .i-info {
