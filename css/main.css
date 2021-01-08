@@ -115,7 +115,7 @@ gris      : #F2F2F2
 
 
 #many-available {
-    margin-top: 2%;
+    margin-top: 0;
     margin-bottom: 2%;
     font-size: smaller;
 }
@@ -190,10 +190,33 @@ gris      : #F2F2F2
     background-color: #F2F2F2;
 }
 
-.search {                              /* Barre de Recherche */
+.search {                               /* Barre de Recherche */
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+
+    
+
+}
+.search label {                         /* Icone de localisation */
+
+    background-color: #F2F2F2;
+
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    padding: 13px 15px;
+
+}
+
+.search input {                         /* Zone de texte */
+
+    height: 38px;
+
+    border: solid #F2F2F2 1px;
+    padding: 0;
+
 }
 .search button {                        /* Bouton Rechercher */
     background-color: #0065FC;
@@ -201,13 +224,15 @@ gris      : #F2F2F2
     font-weight: 700;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 10px;
     border: #0065FC solid 1px;
+
+    height: 40px;
+    padding: 0 15px;
 }
 
 
 
-.filters-btn {                  /* Bouton de Filtre */
+.filters-btn {                          /* Bouton de Filtre */
     padding: 0 1em 0 0;
     margin: 1.5% 0.5%;
 
@@ -219,7 +244,7 @@ gris      : #F2F2F2
     font-weight: 900;
 
 }
-.filters-btn span {         /* Icone du bouton de filtre*/
+.filters-btn span {                     /* Icones des boutons de filtre*/
     padding: 0.7em;
     margin-right: 0.4em;
     color: #0065FC;
