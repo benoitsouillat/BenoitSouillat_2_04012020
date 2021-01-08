@@ -21,24 +21,24 @@
                 <h4>En plein centre-ville ou en pleine nature</h4>
 
                 <!-- Barre de Recherche-->
-                <form method="GET">
+                <form method="GET" class="search">
                         <label for="search"></label>
                         <p>I</p> <!-- Coller les éléments du formulaire-->
                         <input type="text" name="search" id="search" />
                         <button type="submit" >Rechercher</button>
                 </form>     
             </section>
-            <section id="filters">
-                <!-- Filtres-->
-                <h4>Filtres </h4>
-                <p id="filters-list">
-                    <button>Economique</button> <!-- Mettre les classes correspondantes aux images -->
-                    <button>Familial</button> <!-- Prévoir la mise en page des buttons-->
-                    <button>Romantique</button>
-                    <button>Animaux autorisés</button>
-                </p>
+            <section id="filters">      <!-- Filtres-->
+                <div id="filters-list">
+                    <h4>Filtres </h4>
+                    <button class="filters-btn" ><span class="fa fa-money-bill-wave"></span> Économique</button>
+                    <button class="filters-btn" ><span class="fa fa-child" ></span> Familial</button>
+                    <button class="filters-btn" ><span class="fa fa-heart" ></span> Romantique</button>
+                    <button class="filters-btn" ><span class="fa fa-dog"></span> Animaux autorisés</button>
+                </div>
                 <p id="many-available">
-                    <img src="../ico/info.svg" alt="i info"/> Plus de 500 logements sont disponibles dans cette ville
+                    <span class="i-info">i</span>
+                    Plus de 500 logements sont disponibles dans cette ville
                 </p>
             </section>
         </header>
@@ -71,8 +71,14 @@
                 </div>
 
             </section>
-            <section id="most-popular">
-                <h2>Les plus populaires <i></i></h2>
+            <section id="most-popular" class="test-grid">
+                <h2>Les plus populaires <i  class="fa fa-chart-line" ></i></h2>
+                <div class="divtest" style="background-color: purple">1</div>
+                <div class="divtest" style="background-color: blue">2</div>
+                <div class="divtest" style="background-color: red">3</div>
+                <div class="divtest" style="background-color: green">4</div>
+                <div class="divtest-two" style="background-color: beige">5</div>
+                <div class="divtest-two" style="background-color: yellow">6</div>
 
             </section>
         </div>

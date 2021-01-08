@@ -10,6 +10,40 @@ bleuclair : #DEEBFF
 gris      : #F2F2F2
 */
 
+/* ------------ TESTS --------------------*/
+
+.test-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(6, 15%);
+}
+
+
+.divtest {
+
+    border: black 3px solid;
+
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+
+}
+
+.divtest-two {
+    border: black 3px solid;
+
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+
+    grid-column: 4/6;
+
+}
+
+
 /* --- Bandeau de Menu ---*/
 
 #menu {
@@ -65,30 +99,20 @@ gris      : #F2F2F2
 /* --- Filtres --- */
 #filters {
     display: flex;
+    flex-direction: column;
 }
 
-#filters-list a {
-    font-weight: 900;
-    padding: 1rem;
-    border: solid  black /*#F2F2F2*/ 1px;
-
-    color: #000;
-    text-decoration: none;
+#filters-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-#filters-list a:hover {
-    color: #000;
-    text-decoration: none;
+#filters-list h4 {
+    padding-right: 0.4em;
+    font-size: 0.8rem;
 }
 
-#filters-list img {
-    padding: 0.8em;
-    width: 1rem;
-    height: 1rem;
-    border: solid #DEEBFF 1px;
-    border-radius: 100%;
-    background-color: #DEEBFF;
-}
 
 #many-available {
     margin-top: 2%;
@@ -164,6 +188,52 @@ gris      : #F2F2F2
     padding: 4%;
     border-radius: 20%;
     background-color: #F2F2F2;
+}
+
+.search {                              /* Barre de Recherche */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.search button {                        /* Bouton Rechercher */
+    background-color: #0065FC;
+    color: white;
+    font-weight: 700;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    border: #0065FC solid 1px;
+}
+
+
+
+.filters-btn {                  /* Bouton de Filtre */
+    padding: 0 1em 0 0;
+    margin: 1.5% 0.5%;
+
+    background-color: #FFF;
+    
+    border: 2px solid #F2F2F2;
+    border-radius: 40px 40px 40px 40px;
+
+    font-weight: 900;
+
+}
+.filters-btn span {         /* Icone du bouton de filtre*/
+    padding: 0.7em;
+    margin-right: 0.4em;
+    color: #0065FC;
+    background-color: #DEEBFF;
+
+    border: 1px solid #DEEBFF;
+    border-radius: 100%;
+}
+
+.i-info {
+    border: 2px solid #F2F2F2;
+    border-radius: 100%;
+    color: #0065FC;
+    padding: 0.1em 0.4em;
 }
 
 
