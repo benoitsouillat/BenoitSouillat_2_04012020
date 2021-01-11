@@ -1,0 +1,46 @@
+
+body {
+    color: red;
+    margin: 0;
+        
+}
+
+#hebergement {
+    background-color: #fff;
+}
+
+#menu {
+    flex-wrap: wrap;
+}
+
+#menu img{
+    margin-left: 16px;
+}
+
+#navbar {
+    margin: 7% 0;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+#navbar a {
+    padding: 12px 32px;
+    border-bottom: #F2F2F2 solid 2px ;
+    width: 50%;
+}
+
+#navbar .active {
+    border-top: 0;
+    border-bottom: #0065FC solid 2px;
+    color: #0065FC;
+    font-weight: 600;
+
+}
+
+#logon {
+    order: 1;
+    position: absolute;
+    top: 32px;
+    right: 16px;
+    padding: 0;
+}
