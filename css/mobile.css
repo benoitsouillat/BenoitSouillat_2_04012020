@@ -37,10 +37,12 @@ body {
 
 }
 
-#logon {
-    order: 1;
+#navbar #logon {
     position: absolute;
     top: 32px;
     right: 16px;
+    width: auto;
+    border: none;
     padding: 0;
+    color: #0065FC;
 }
