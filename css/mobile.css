@@ -1,13 +1,5 @@
 
-body {
-    color: red;
-    margin: 0;
-        
-}
-
-#hebergement {
-    background-color: #fff;
-}
+/* --- Bandeau de Menu ---*/
 
 #menu {
     flex-wrap: wrap;
@@ -34,7 +26,6 @@ body {
     border-bottom: #0065FC solid 2px;
     color: #0065FC;
     font-weight: 600;
-
 }
 
 #navbar #logon {
@@ -45,4 +36,60 @@ body {
     border: none;
     padding: 0;
     color: #0065FC;
+}
+
+/* --- Bandeau demi-Titres --- */
+
+#header-description {
+    line-height: 1.2rem;
+    margin: 0 5%;
+    padding-right: 10%;
+}
+
+#header-description h3 {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+#header-description h4 {
+    margin-top: 3%;
+}
+
+#filters-list {
+    flex-wrap: wrap;
+}
+
+#many-available {
+    display: flex;
+    margin: 20px 5px;
+}
+#many-available span {
+    margin: 0 10px auto 10px;
+}
+
+/*  Contenu de la page */
+
+#most-popular {
+    order: 1;
+    width: auto;
+    border-radius: 0;
+}
+
+#hebergement {
+
+    max-width: 100%;
+    order: 2;
+    width: auto;
+    background-color: #FFF;
+
+}
+
+
+.container {
+    flex-wrap: wrap;
+}
+
+body {
+    color: red;
+    margin: 0;        
 }
