@@ -112,6 +112,7 @@ gris      : #F2F2F2
     align-items: center;
     flex-shrink: 1;
     flex-grow: 1;
+    flex-wrap: wrap;
 
     margin-bottom: 20px;
 
@@ -165,11 +166,14 @@ gris      : #F2F2F2
     position: relative;
     top: -10px;
 
-    overflow: hidden;
+    height: 130px;
+
 
 }
 
 #hebergement a {
+    
+    margin-top: 5%;
     text-decoration: none;
     color: black;
     font-size: 1.3em;

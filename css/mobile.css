@@ -42,23 +42,43 @@
 
 #header-description {
     line-height: 1.2rem;
-    margin: 0 5%;
-    padding-right: 10%;
+    margin: 0;
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 #header-description h3 {
+
     font-weight: 700;
-    margin-bottom: 0;
+    margin: auto;
+    margin-right: 15% ;
+    width: 85%;
+    font-size: 1.4em;
+    
 }
 
 #header-description h4 {
     margin-top: 3%;
 }
 
-#filters-list {
-    flex-wrap: wrap;
+#filters {
+    margin: 0 20px;
 }
 
+#filters-list {
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#filters-list h4 {
+    width: 100%;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+#filters p {
+    font-size: 1em;
+}
 #many-available {
     display: flex;
     margin: 20px 5px;
@@ -85,6 +105,23 @@
 
 }
 
+.search {
+    display: grid;
+    grid-template: 40px / 40px 65% 40px;
+}
+.search label {
+    grid-column: 1/2;
+}
+.search input {
+    grid-column: 2/3;
+}
+
+.search button {
+    grid-column: 3/4;
+    width: 40px;
+    border-radius: 20%;
+
+}
 
 .container {
     flex-wrap: wrap;
