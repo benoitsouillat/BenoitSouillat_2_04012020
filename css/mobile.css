@@ -98,11 +98,25 @@
 }
 
 #hebergement {
-    max-width: 100%;
+    width: 85%;
     order: 2;
-    width: auto;
     background-color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+#hebergement > div {
+    flex-direction: column;
+    margin: 0;
+}
+#hebergement figure {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 15px;
+}
+#hebergement a {
 
+    align-self: flex-start;
+    font-weight: 700;
 }
 
 .search {
@@ -120,7 +134,6 @@
     grid-column: 3/4;
     width: 40px;
     border-radius: 20%;
-
 }
 
 .container {
@@ -128,7 +141,10 @@
 }
 
 .container h2 {
-    font-size: 1.2em;
+    font-size: 18px;
+}
+.align-stars {
+    grid-template: 100% / repeat(5, 1fr) 75%;
 }
 
 body {
