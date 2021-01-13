@@ -144,7 +144,7 @@
     font-size: 18px;
 }
 .align-stars {
-    grid-template: 100% / repeat(5, 1fr) 75%;
+    grid-template: 100% / repeat(5, 14px) 1fr;
 }
 
 body {
