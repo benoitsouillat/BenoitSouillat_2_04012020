@@ -261,7 +261,6 @@ gris      : #F2F2F2
 #activities {
     margin: 2%;
     margin-left: 4%;
-    width: 100%;
 
     box-sizing: border-box;
 
@@ -386,7 +385,7 @@ gris      : #F2F2F2
     padding: 0 15px;
 }
 
-@media all and (min-width:768px)
+@media all and (min-width:768px)    /* Hide Search button to show the icone */
 {
     .search button .fa-search {
         display: none;
@@ -449,6 +448,7 @@ body {
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 14px;
     line-height: 16px;
+    box-sizing: border-box;
 }
 
 header {
@@ -457,10 +457,13 @@ header {
 
 footer {
 
+    /*
     position: relative;
     bottom: 0;
     left: 0;
+    
     padding: 1rem 1.4rem;
+    */
     background-color: #F2F2F2;
     width: 100%;
     display: flex;
@@ -476,6 +479,7 @@ footer div {
     flex-direction: column;
     margin-left: 4%;
     padding-right: 15%;
+
 }
 
 footer h5 {

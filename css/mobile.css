@@ -1,10 +1,8 @@
-
 /* --- Bandeau de Menu ---*/
 
 #menu {
     flex-wrap: wrap;
 }
-
 #menu img{
     margin-left: 16px;
 }
@@ -20,14 +18,12 @@
     border-bottom: #F2F2F2 solid 2px ;
     width: 50%;
 }
-
 #navbar .active {
     border-top: 0;
     border-bottom: #0065FC solid 2px;
     color: #0065FC;
     font-weight: 600;
 }
-
 #navbar #logon {
     position: absolute;
     top: 32px;
@@ -36,12 +32,7 @@
     border: none;
     padding: 0;
     color: #0065FC;
-
-
 }
-
-
-
 /* --- Bandeau demi-Titres --- */
 
 
@@ -50,21 +41,16 @@
     line-height: 1.2rem;
     margin: 0;
     margin-left: 20px;
-
     display: flex;
     flex-direction: column;
 }
-
 #header-description h3 {
-
     font-weight: 700;
     margin: auto;
     margin-right: 15% ;
     width: 85%;
     font-size: 1.4em;
-    
 }
-
 #header-description h4 {
     margin-top: 3%;
 }
@@ -72,7 +58,6 @@
 #filters {
     margin: 0 20px;
 }
-
 #filters-list {
     padding-top: 20px;
     flex-wrap: wrap;
@@ -185,17 +170,14 @@
 .search input {
     grid-column: 2/3;
 }
-
 .search button {
     grid-column: 3/4;
     width: 40px;
     border-radius: 20%;
 }
-.search button span {
+.search button .fa-search {
     text-align: center;
-
 }
-
 .search button #text {
     display: none;
 }
@@ -205,16 +187,15 @@
     box-sizing: border-box;
     margin-left: 0;
 }
-
 .container h2 {
     font-size: 18px;
 }
+
 .align-stars {
     grid-template: 100% / repeat(5, 14px) 1fr;
 }
 
 body {
-    color: red;
     margin: 0;        
 }
 header {
@@ -226,9 +207,7 @@ footer {
     font-size: 1.0em;
 }
 
-footer div {
-    box-sizing: border-box;
-}
+
 
 @media all and (min-width:450px)        /* --- Mobile Version Large --- ( Between 450 px and 678 px ) -- */
 {
@@ -260,7 +239,7 @@ footer div {
         width: 40%;
     }
 
-    #hebergement div:nth-child(4) {
+    #hebergement > div:nth-child(4) {
         width: 100%;
         align-self: flex-start;
         padding-left: 30px;

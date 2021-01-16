@@ -1,0 +1,41 @@
+
+
+body {
+    margin: 0;
+    color: green;
+}
+
+.container {
+    flex-wrap: wrap;
+}
+#hebergement {
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#most-popular {
+    max-width: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+#most-popular > div {
+    grid-template: repeat(3, 1fr) / 1fr 60% 1fr;
+}
+#most-popular figure {
+    grid-column-start: 2;
+}
+#activities > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+#activities figure {
+    max-width: 300px;
+    min-width: 250px;
+    width: auto;
+    margin: 15px;
+    box-sizing: border-box;
+    height: 160px;
+}

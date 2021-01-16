@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-        <script src="https://kit.fontawesome.com/5944b63bf2.js" crossorigin="anonymous"></script> <!--Font-awesome -->
+        <script src="https://kit.fontawesome.com/5944b63bf2.js" crossorigin="anonymous"></script>
         <link href="../css/main.css" rel="stylesheet" media="all" type="text/css"/>
         <link href="../css/mobile.css" rel="stylesheet" media="screen and (max-width: 768px)" type="text/css"/>
         <link href="../css/medium.css" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" type="text/css"/>
@@ -27,7 +27,10 @@
                 <form method="GET" class="search">
                         <label class="fa fa-map-marker-alt" for="search"></label>
                         <input type="text" name="search" id="search" value="Marseille, France"/>
-                        <button type="submit" >Rechercher</button>
+                        <button type="submit" >
+                            <span id="text">Rechercher</span>
+                            <span class="fa fa-search"></span>
+                        </button>
                 </form>     
             </section>
             <section id="filters">      <!-- Filtres-->
