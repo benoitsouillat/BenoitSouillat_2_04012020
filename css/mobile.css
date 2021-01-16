@@ -36,7 +36,11 @@
     border: none;
     padding: 0;
     color: #0065FC;
+
+
 }
+
+
 
 /* --- Bandeau demi-Titres --- */
 
@@ -97,10 +101,10 @@
     box-sizing: border-box;
 
     padding: 20px;
-    padding-left: 4%;
     margin-right: 0;
     margin-left: 0;
 
+    min-width: auto;
     max-width: 100%;
     width: 100%;
 }
@@ -185,6 +189,14 @@
     width: 40px;
     border-radius: 20%;
 }
+.search button span {
+    text-align: center;
+
+}
+
+.search button #text {
+    display: none;
+}
 
 .container {
     flex-wrap: wrap;
@@ -215,4 +227,18 @@ footer {
 
 footer div {
     box-sizing: border-box;
+}
+
+@media all and (min-width:450px)        /* --- Mobile Version Large --- ( Between 450 px and 678 px ) -- */
+{
+    #navbar #logon {
+        font-size: 1.2em;
+    }
+    #header-description {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    
+
 }

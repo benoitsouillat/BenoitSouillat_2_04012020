@@ -386,6 +386,13 @@ gris      : #F2F2F2
     padding: 0 15px;
 }
 
+@media all and (min-width:768px)
+{
+    .search button .fa-search {
+        display: none;
+    }
+}
+
 .filters-btn {                          /* Bouton de Filtre */
     padding: 0 1.2em 1em 0;
     margin: 1.5% 0.5%;
