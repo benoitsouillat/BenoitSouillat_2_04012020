@@ -118,7 +118,9 @@
 
     max-width: 300px;
     width: 100%;
-
+}
+#most-popular figcaption {
+    padding-right: 20px;
 }
 
 #hebergement {
@@ -220,7 +222,6 @@ header {
 }
 
 footer {
-    box-sizing: border-box;
     flex-direction: column;
     font-size: 1.0em;
 }
@@ -231,6 +232,10 @@ footer div {
 
 @media all and (min-width:450px)        /* --- Mobile Version Large --- ( Between 450 px and 678 px ) -- */
 {
+    .search {
+        grid-template: 40px / 40px 80% 40px;
+    }
+
     #navbar #logon {
         font-size: 1.2em;
     }
@@ -239,6 +244,26 @@ footer div {
         padding: 20px;
     }
 
-    
+    #most-popular figure {
+        max-width: 400px;
+    }
+
+    #hebergement {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around
+    }
+    #hebergement h2 {
+        width: 100%;
+    }
+    #hebergement > div {
+        width: 40%;
+    }
+
+    #hebergement div:nth-child(4) {
+        width: 100%;
+        align-self: flex-start;
+        padding-left: 30px;
+    }
 
 }
