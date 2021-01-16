@@ -112,8 +112,8 @@ gris      : #F2F2F2
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 1;
-    flex-grow: 1;
+    /*flex-shrink: 1;
+    flex-grow: 1; */
     flex-wrap: wrap;
 
     margin-bottom: 20px;
@@ -127,8 +127,9 @@ gris      : #F2F2F2
     box-shadow: 2px 2px 3px #F2F2F2;
     display: flex;
     flex-direction: column;
-    width: auto;
-    max-width: 30%;
+    width: 30%;
+    min-width: 180px;
+    max-width: 270px;
     height: 160px;
     margin: 0;
 
@@ -163,13 +164,13 @@ gris      : #F2F2F2
 #hebergement img {
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
+    object-fit: cover;
+
+    height: 130px;
     width: 100%;
 
     position: relative;
-    top: -10px;
-
-    height: 130px;
-
+    top: -15px;
 
 }
 
@@ -189,11 +190,13 @@ gris      : #F2F2F2
 
                                         /* Partie 'les plus populaires'  */
 #most-popular {
-    min-width: 27%;
+    min-width: 280px;
+    max-width: 25%;
     background-color:#f2f2f2;
     border-radius: 5%;
 
     padding: 20px 30px;
+    margin-right: 40px;
 }
 #most-popular > div {
 
@@ -216,7 +219,7 @@ gris      : #F2F2F2
 
     background-color: #FFF;
     border-radius: 20px;
-    padding: 5px;
+    padding: 3px;
 
     display: grid;
     grid-template: 100% / 40% 1fr;
@@ -226,10 +229,10 @@ gris      : #F2F2F2
 }
 #most-popular img {
     grid-column: 1 / 2;
-
+    object-fit: cover;
 
     width: 100%;
-    height: 120px;   /* A CORRIGER - Pour les tests de mise en page*/
+    height: 120px;
 
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -256,46 +259,84 @@ gris      : #F2F2F2
 }
 
 #activities {
-    text-indent: 3%;
     margin: 2%;
+    margin-left: 4%;
     width: 100%;
 
-    height: 450px;
+    box-sizing: border-box;
+
 }
 
 #activities div {
+
+    height: 350px;
+
     display: grid;
-    grid-template: 210px 210px / repeat(4, 25%);
-    column-gap: 20px;
-    row-gap: 20px;
+    grid-template: 45% 10% 10% 35% / repeat(4, 21%);
+    column-gap: 3%;
+
+    justify-items: center;
 
 }
 
 #activities figure {
-    border-radius: 5%;
+    border-radius: 20px;
     font-weight: 900;
-    box-shadow: 2px 2px 10px #F2F2F2 ;
+    box-shadow: 2px 2px 10px grey;
+    margin: 0;
 
-    box-shadow: 2px 2px 5px green;
-
+    display: grid;
+    grid-template: 1fr 50px / 100%;
 }
 
+
 #activities img {
+
+    object-fit: cover;
+
     width: 100%;
-    height: 90%;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    grid-row: 1 / 2;
+
+    overflow: hidden;
+
+}
+#activities figcaption {
+
+    grid-row: 2 / 3;
+
+    box-sizing: border-box;
+    background-color: #FFF;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#activities figcaption h3 {
+    text-indent: 20px;
+    padding-top: 1%;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 #activities .big {
+    grid-row: 1 / 5;
+}
+#activities #pomègues {
+    grid-column: 2 / 3;
     grid-row: 1 / 3;
 }
-
-#activities .small-top {
+#activities #frioul {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+#activities #notre-dame {
+    grid-column: 4 / 5;
     grid-row: 1 / 2;
 }
-#activities .small-bot {
-    grid-row: 2 / 3;
+#activities #longchamp {
+    grid-column: 4 / 5;
+    grid-row: 3 / 5;
 }
 
 /* --- Classes --- */
@@ -303,7 +344,7 @@ gris      : #F2F2F2
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 
     font-size: 0.9em;
     margin-left:  4%;
