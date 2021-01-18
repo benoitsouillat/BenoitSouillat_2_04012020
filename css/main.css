@@ -94,12 +94,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*flex-shrink: 1;
-    flex-grow: 1; */
     flex-wrap: wrap;
 
     margin-bottom: 20px;
 
+}
+#hebergement > div > a {
+    color: #000;
+    text-decoration: none;
+    width: 30%;
 }
 #hebergement figure {
 
@@ -108,12 +111,14 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    width: 30%;
     min-width: 180px;
     max-width: 270px;
     height: 160px;
     margin: 0;
     box-shadow: 1px 1px 5px #acaaaa;
+}
+#hebergement figure:hover {
+    border: #DEEBFF 4px solid;
 }
 #hebergement figcaption {
     height: 50%;
@@ -132,10 +137,7 @@
     margin: 0;
     font-weight: 900;
 }
-
-
 #hebergement figure > div {
-
     overflow: hidden;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
@@ -152,7 +154,7 @@
     position: relative;
     top: -15px;
 }
-#hebergement a {
+#hebergement .show-more {
     margin-top: 5%;
     text-decoration: none;
     color: black;
@@ -160,7 +162,7 @@
     font-weight: 900;
 
 }
-#hebergement a:hover {
+#hebergement .show-more:hover {
     text-decoration: none;
     color: black;
     transform: scale(1.1);
