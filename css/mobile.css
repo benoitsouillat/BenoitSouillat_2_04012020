@@ -91,7 +91,6 @@
 
     min-width: auto;
     max-width: 100%;
-    width: 100%;
 }
 
 #most-popular > div {
@@ -109,14 +108,11 @@
 }
 
 #hebergement {
-    width: 100%;
     order: 2;
     background-color: #FFF;
     margin: 0;
     padding: 20px;
-
     box-sizing: border-box;
-
 }
 #hebergement > div {
     flex-direction: column;
@@ -126,10 +122,8 @@
     width: 100%;
     max-width: 300px;
     margin-bottom: 15px;
-
 }
 #hebergement a {
-
     align-self: flex-start;
     font-weight: 700;
 }
@@ -138,27 +132,37 @@
     margin-top: 70px;
     box-sizing: border-box;
 }
-
-#activities  div {
+#activities div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
     margin-right: 20px;
     height: auto;
 }
-
 #activities figure {
     max-width: 300px;
     min-width: 250px;
     width: auto;
     margin: 15px;
     box-sizing: border-box;
+}
+#activities .big {
     height: 160px;
 }
-
+#activities #pomègues {
+    height: 160px;
+}
+#activities #frioul {
+    height: 160px;
+}
+#activities #notre-dame {
+    height: 160px;
+}
+#activities #longchamp {
+    height: 160px;
+}
 
 .search {
     display: grid;
@@ -184,9 +188,9 @@
 
 .container {
     flex-wrap: wrap;
-    box-sizing: border-box;
     margin-left: 0;
 }
+
 .container h2 {
     font-size: 18px;
 }

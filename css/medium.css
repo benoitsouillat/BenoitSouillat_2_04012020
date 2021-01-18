@@ -8,14 +8,12 @@ body {
     flex-wrap: wrap;
 }
 #hebergement {
-    margin-bottom: 20px;
-    width: 100%;
-    box-sizing: border-box;
+    order: 2;
 }
 #most-popular {
     max-width: none;
-    width: 100%;
-    box-sizing: border-box;
+    margin-bottom: 20px;
+
 }
 #most-popular > div {
     grid-template: repeat(3, 1fr) / 1fr 60% 1fr;
@@ -36,5 +34,20 @@ body {
     width: auto;
     margin: 15px;
     box-sizing: border-box;
+    height: 160px;
+}
+#activities .big {
+    height: 160px;
+}
+#activities #pomègues {
+    height: 160px;
+}
+#activities #frioul {
+    height: 160px;
+}
+#activities #notre-dame {
+    height: 160px;
+}
+#activities #longchamp {
     height: 160px;
 }
