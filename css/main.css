@@ -374,6 +374,11 @@
     left: -2px;
     top: -1px;
 }
+.filters-btn:hover {
+    background-color: #0065FC;
+    color: #FFF;
+    text-decoration: underline;
+}
 
 .i-info {
     border: 2px solid #F2F2F2;
@@ -426,6 +431,7 @@ footer {
     display: flex;
     font-size: 12px;
     line-height: 1.4rem;
+    padding-bottom: 25px;
 
 }
 footer div {
