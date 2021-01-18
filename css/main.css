@@ -9,7 +9,7 @@
     gris      : #F2F2F2
 */
 
-/* -----  Menu -----*/
+            /* -----  Menu -----*/
 
 #menu {
     display: flex;
@@ -29,6 +29,11 @@
     text-decoration: none;
     color: black;
 }
+#navbar a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+    color: #0065FC;
+}
 #navbar .active {
     border-top: #0065FC solid 2px;
     color: #0065FC;
@@ -43,7 +48,7 @@
     text-decoration: underline;
 }
 
-/* --- Bandeau demi-Titres --- */
+            /* --- Bandeau demi-Titres --- */
 
 #header-description {
     line-height: 0.4em;
@@ -58,7 +63,7 @@
     font-size: small;
 }
 
-/* --- Filtres --- */
+            /* --- Filtres --- */
 #filters {
     display: flex;
     flex-direction: column;
@@ -82,9 +87,9 @@
     font-size: smaller;
 }
 
-/* --- Contenu de la page --- */
+            /* --- Contenu de la page --- */
 
-#hebergement {
+#hebergement {                        /*-- Section Hebergement --*/
 
     min-width: 60%;
     background-color: #F2F2F2;
@@ -172,7 +177,7 @@
     transform: scale(1.1);
 }
 
-                                        /* Partie 'les plus populaires'  */
+                                         /* Partie 'les plus populaires'  */
 #most-popular {
     min-width: 280px;
     max-width: 25%;
@@ -201,7 +206,7 @@
     display: grid;
     grid-template: 100% / 40% 1fr;
     margin: 0px;
-    box-shadow: 2px 2px 5px grey /* A CORRIGER  - Pour avoir un aperçu des ombres - mauvaise couleur*/
+    box-shadow: 2px 2px 5px grey        /* A CORRIGER  - Pour avoir un aperçu des ombres - mauvaise couleur*/
 }
 #most-popular img {
     grid-column: 1 / 2;
@@ -226,7 +231,7 @@
     grid-row: -2 / -3; 
 }
 
-#activities {
+#activities {                                 /*-- Section Activities --*/
     margin: 2%;
     margin-right: 40px;
     margin-left: 4%;
@@ -340,13 +345,13 @@
     font-weight: 700;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    border: #0065FC solid 1px;
+    border: solid 1px;
 
     height: 40px;
     padding: 0 15px;
 }
 
-@media all and (min-width:768px)    /* Hide Search button to show the icone */
+@media all and (min-width:768px)        /* Hide Search button to show the icone */
 {
     .search button .fa-search {
         display: none;
