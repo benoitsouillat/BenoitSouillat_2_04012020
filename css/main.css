@@ -302,7 +302,7 @@
     justify-content: space-between;
     font-size: 0.9em;
     margin-left:  4%;
-    width: 100%;
+    width: 96%;                        /* ------- width = screen.width - margin-left ----*/
     box-sizing: border-box;
 
 }
@@ -404,12 +404,13 @@
 
 body {
 
+    margin: 0;
     margin-top: 2px;
-
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 14px;
     line-height: 16px;
     box-sizing: border-box;
+
 }
 
 header {
@@ -417,8 +418,6 @@ header {
 }
 
 footer {
-
-    
     position: relative;
     bottom: 0;
     left: 0;
