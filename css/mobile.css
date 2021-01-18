@@ -130,6 +130,7 @@
 
 #activities {
     margin-top: 70px;
+    margin-right: 0;
     box-sizing: border-box;
 }
 #activities div {
@@ -189,6 +190,7 @@
 .container {
     flex-wrap: wrap;
     margin-left: 0;
+    width: 100%;
 }
 
 .container h2 {
