@@ -1,9 +1,4 @@
 
-
-body {
-    margin: 0;
-}
-
 .container {
     flex-wrap: wrap;
 }
@@ -28,11 +23,13 @@ body {
     flex-wrap: wrap;
     height: auto;
 }
+#activities a {
+    margin: 15px;
+}
 #activities figure {
     max-width: 300px;
     min-width: 250px;
     width: auto;
-    margin: 15px;
     box-sizing: border-box;
     height: 160px;
 }
