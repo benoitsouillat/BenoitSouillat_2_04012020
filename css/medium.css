@@ -48,3 +48,8 @@
 #activities #longchamp {
     height: 160px;
 }
+@media all and (min-width: 1000px) {
+    #most-popular > div {
+        grid-template: repeat(3, 1fr) / 1fr 50% 1fr;
+    }
+}
