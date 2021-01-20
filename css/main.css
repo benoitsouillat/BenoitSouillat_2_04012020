@@ -222,6 +222,9 @@
     margin-left: 4%;
     box-sizing: border-box;
 }
+#activities h2 {
+    margin-bottom: 30px;
+}
 #activities div {
     height: 350px;
     display: grid;
@@ -455,5 +458,8 @@ footer h5 {
     }
     #hebergement > div:nth-child(4) {
         justify-content: space-between;
+    }
+    #activities h2 {
+        padding-left: 2%;
     }
 }
