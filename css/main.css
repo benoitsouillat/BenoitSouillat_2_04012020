@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Raleway';
-    src: url('../font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
-}
+
             /* -----  Menu -----*/
 #menu {
     display: flex;
@@ -47,10 +44,10 @@
     line-height: 0.4em;
 }
 #header-description h3 {
-    font-weight: 900;
+    font-weight: 700;
 }
 #header-description h4 {
-    font-weight: 100;
+    font-weight: 300;
     font-size: small;
 }
 
@@ -132,7 +129,7 @@
 }
 #hebergement h3 {
     margin: 0;
-    font-weight: 900;
+    font-weight: 700;
 }
 #hebergement figure > div {
     overflow: hidden;
@@ -156,7 +153,7 @@
     text-decoration: none;
     color: black;
     font-size: 1.3em;
-    font-weight: 900;
+    font-weight: 700;
 
 }
 #hebergement .show-more:hover {
@@ -182,7 +179,7 @@
 #most-popular h2 {
     display: flex;
     justify-content: space-between;
-    font-weight: bolder;
+    font-weight: 700;
 }
 #most-popular figure {
     grid-column-start: 1;
@@ -237,7 +234,7 @@
     text-decoration: none;
 }
 #activities figure {
-    font-weight: 900;
+    font-weight: 700;
     box-shadow: 2px 2px 10px #acaaaa;
     margin: 0;
     display: grid;
@@ -273,7 +270,7 @@
     text-indent: 20px;
     padding-top: 1%;
     font-size: 1em;
-    font-weight: bold;
+    font-weight: 700;
 }
 #activities .big {
     grid-row: 1 / 5;
@@ -337,7 +334,7 @@
     height: 38px;
     border: solid #F2F2F2 1px;
     padding: 0;
-    font-weight: 900;
+    font-weight: 700;
     padding-left: 10px;
 }
 .search button {                        /* Bouton Rechercher */
@@ -365,7 +362,7 @@
     background-color: #FFF;
     border: 2px solid #F2F2F2;
     border-radius: 40px 40px 40px 40px;
-    font-weight: 900;
+    font-weight: 700;
     max-height: 40px;
 
 }
@@ -400,7 +397,7 @@
     color: #DEEBFF;
 }
 .font-bold {
-    font-weight: 900;
+    font-weight: 700;
 }
 .align-stars {
     display: grid;
@@ -448,7 +445,7 @@ footer div {
 footer h5 {
     margin-bottom: 8px;
     font-size: 14px;
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 @media all and (min-width:1500px) {     /* ------ Very Large Screens ---- */
